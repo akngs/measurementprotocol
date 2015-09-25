@@ -1,0 +1,22 @@
+{
+  "name": "measurementprotocol",
+  "version": "1.0.0",
+  "description": "Google Analytics Measurement Protocol",
+  "homepage": "https://github.com/akngs/measurementprotocol",
+  "repository": "akngs/measurementprotocol",
+  "author": {
+    "name": "Alan Kang",
+    "email": "jania902@gmail.com",
+    "url": "http://github.com/akngs"
+  },
+  "files": [
+    "lib"
+  ],
+  "bin": "lib/index.js",
+  "keywords": [],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "js-yaml": "^3.4.2",
+    "jsdom": "^6.5.1"
+  }
+}

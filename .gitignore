@@ -1,0 +1,10 @@
+### node
+node_modules
+
+
+### IDEs
+.idea
+
+
+### OS specifics
+.DS_Store

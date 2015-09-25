@@ -1,0 +1,1077 @@
+- id: general
+  name: General
+  params:
+    - id: v
+      name: Protocol Version
+      requirements: &ref_0
+        - pageview
+        - screenview
+        - event
+        - transaction
+        - item
+        - social
+        - exception
+        - timing
+      description: "The Protocol version. The current value is '1'. This will only change when there are changes made that are not backwards compatible."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: tid
+      name: Tracking ID / Web Property ID
+      requirements: *ref_0
+      description: The tracking ID / web property ID. The format is UA-XXXX-Y. All collected data is associated by this ID.
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: aip
+      name: Anonymize IP
+      requirements: []
+      description: 'When present, the IP address of the sender will be anonymized. For example, the IP will be anonymized if any of the following parameters are present in the payload: &aip=, &aip=0, or &aip=1'
+      valueType: boolean
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: ds
+      name: Data Source
+      requirements: []
+      description: "Indicates the data source of the hit. Hits sent from analytics.js will have data source set to 'web'; hits sent from one of the mobile SDKs will have data source set to 'app'."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: qt
+      name: Queue Time
+      requirements: []
+      description: Used to collect offline / latent hits. The value represents the time delta (in milliseconds) between when the hit being reported occurred and the time the hit was sent. The value must be greater than or equal to 0. Values greater than four hours may lead to hits not being processed.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: z
+      name: Cache Buster
+      requirements: []
+      description: "Used to send a random number in GET requests to ensure browsers and proxies don't cache hits. It should be sent as the final parameter of the request since we've seen some 3rd party internet filtering software add additional parameters to HTTP requests incorrectly. This value is not used in reporting."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: user
+  name: User
+  params:
+    - id: cid
+      name: Client ID
+      requirements: *ref_0
+      description: 'This anonymously identifies a particular user, device, or browser instance. For the web, this is generally stored as a first-party cookie with a two-year expiration. For mobile apps, this is randomly generated for each particular instance of an application install. The value of this field should be a random UUID (version 4) as described in http://www.ietf.org/rfc/rfc4122.txt'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: uid
+      name: User ID
+      requirements: []
+      description: This is intended to be a known identifier for a user provided by the site owner/tracking library user. It must not itself be PII (personally identifiable information). The value should never be persisted in GA cookies or other Analytics provided storage.
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: session
+  name: Session
+  params:
+    - id: sc
+      name: Session Control
+      requirements: []
+      description: "Used to control the session duration. A value of 'start' forces a new session to start with this hit and 'end' forces the current session to end with this hit. All other values are ignored."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: uip
+      name: IP Override
+      requirements: []
+      description: 'The IP address of the user. This should be a valid IP address in IPv4 or IPv6 format. It will always be anonymized just as though &aip (anonymize IP) had been used.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: ua
+      name: User Agent Override
+      requirements: []
+      description: The User Agent of the browser. Note that Google has libraries to identify real user agents. Hand crafting your own agent could break at any time.
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: geoid
+      name: Geographical Override
+      requirements: []
+      description: "The geographical location of the user. The geographical ID should be a two letter country code or a criteria ID representing a city or region (see http://developers.google.com/analytics/devguides/collection/protocol/v1/geoid). This parameter takes precedent over any location derived from IP address, including the IP Override parameter. An invalid code will result in geographical dimensions to be set to '(not set)'."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: trafficsources
+  name: Traffic Sources
+  params:
+    - id: dr
+      name: Document Referrer
+      requirements: []
+      description: Specifies which referral source brought traffic to a website. This value is also used to compute the traffic source. The format of this value is a URL.
+      valueType: text
+      defaultValue: null
+      maxLength: 2048
+      supportedHitTypes:
+        - all
+    - id: cn
+      name: Campaign Name
+      requirements: []
+      description: Specifies the campaign name.
+      valueType: text
+      defaultValue: null
+      maxLength: 100
+      supportedHitTypes:
+        - all
+    - id: cs
+      name: Campaign Source
+      requirements: []
+      description: Specifies the campaign source.
+      valueType: text
+      defaultValue: null
+      maxLength: 100
+      supportedHitTypes:
+        - all
+    - id: cm
+      name: Campaign Medium
+      requirements: []
+      description: Specifies the campaign medium.
+      valueType: text
+      defaultValue: null
+      maxLength: 50
+      supportedHitTypes:
+        - all
+    - id: ck
+      name: Campaign Keyword
+      requirements: []
+      description: Specifies the campaign keyword.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: cc
+      name: Campaign Content
+      requirements: []
+      description: Specifies the campaign content.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: ci
+      name: Campaign ID
+      requirements: []
+      description: Specifies the campaign ID.
+      valueType: text
+      defaultValue: null
+      maxLength: 100
+      supportedHitTypes:
+        - all
+    - id: gclid
+      name: Google AdWords ID
+      requirements: []
+      description: Specifies the Google AdWords Id.
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: dclid
+      name: Google Display Ads ID
+      requirements: []
+      description: Specifies the Google Display Ads Id.
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: system
+  name: System Info
+  params:
+    - id: sr
+      name: Screen Resolution
+      requirements: []
+      description: Specifies the screen resolution.
+      valueType: text
+      defaultValue: null
+      maxLength: 20
+      supportedHitTypes:
+        - all
+    - id: vp
+      name: Viewport size
+      requirements: []
+      description: Specifies the viewable area of the browser / device.
+      valueType: text
+      defaultValue: null
+      maxLength: 20
+      supportedHitTypes:
+        - all
+    - id: de
+      name: Document Encoding
+      requirements: []
+      description: Specifies the character set used to encode the page / document.
+      valueType: text
+      defaultValue: UTF-8
+      maxLength: 20
+      supportedHitTypes:
+        - all
+    - id: sd
+      name: Screen Colors
+      requirements: []
+      description: Specifies the screen color depth.
+      valueType: text
+      defaultValue: null
+      maxLength: 20
+      supportedHitTypes:
+        - all
+    - id: ul
+      name: User Language
+      requirements: []
+      description: Specifies the language.
+      valueType: text
+      defaultValue: null
+      maxLength: 20
+      supportedHitTypes:
+        - all
+    - id: je
+      name: Java Enabled
+      requirements: []
+      description: Specifies whether Java was enabled.
+      valueType: boolean
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: fl
+      name: Flash Version
+      requirements: []
+      description: Specifies the flash version.
+      valueType: text
+      defaultValue: null
+      maxLength: 20
+      supportedHitTypes:
+        - all
+- id: hit
+  name: Hit
+  params:
+    - id: t
+      name: Hit type
+      requirements: *ref_0
+      description: "The type of hit. Must be one of 'pageview', 'screenview', 'event', 'transaction', 'item', 'social', 'exception', 'timing'."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: ni
+      name: Non-Interaction Hit
+      requirements: []
+      description: Specifies that a hit be considered non-interactive.
+      valueType: boolean
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: content
+  name: Content Information
+  params:
+    - id: dl
+      name: Document location URL
+      requirements: []
+      description: "Use this parameter to send the full URL (document location) of the page on which content resides. You can use the &dh and &dp parameters to override the hostname and path + query portions of the document location, accordingly. The JavaScript clients determine this parameter using the concatenation of the document.location.origin + document.location.pathname + document.location.search browser parameters. Be sure to remove any user authentication or other private information from the URL if present. For 'pageview' hits, either &dl or both &dh and &dp have to be specified for the hit to be valid."
+      valueType: text
+      defaultValue: null
+      maxLength: 2048
+      supportedHitTypes:
+        - all
+    - id: dh
+      name: Document Host Name
+      requirements: []
+      description: Specifies the hostname from which content was hosted.
+      valueType: text
+      defaultValue: null
+      maxLength: 100
+      supportedHitTypes:
+        - all
+    - id: dp
+      name: Document Path
+      requirements: []
+      description: "The path portion of the page URL. Should begin with '/'. For 'pageview' hits, either &dl or both &dh and &dp have to be specified for the hit to be valid."
+      valueType: text
+      defaultValue: null
+      maxLength: 2048
+      supportedHitTypes:
+        - all
+    - id: dt
+      name: Document Title
+      requirements: []
+      description: The title of the page / document.
+      valueType: text
+      defaultValue: null
+      maxLength: 1500
+      supportedHitTypes:
+        - all
+    - id: cd
+      name: Screen Name
+      requirements: *ref_0
+      description: "This parameter is optional on web properties, and required on mobile properties for screenview hits, where it is used for the 'Screen Name' of the screenview hit. On web properties this will default to the unique URL of the page by either using the &dl parameter as-is or assembling it from &dh and &dp."
+      valueType: text
+      defaultValue: null
+      maxLength: 2048
+      supportedHitTypes:
+        - all
+    - id: linkid
+      name: Link ID
+      requirements: []
+      description: 'The ID of a clicked DOM element, used to disambiguate multiple links to the same URL in In-Page Analytics reports when Enhanced Link Attribution is enabled for the property.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: apptracking
+  name: App Tracking
+  params:
+    - id: an
+      name: Application Name
+      requirements: *ref_0
+      description: 'Specifies the application name. This field is required for all hit types sent to app properties. For hits sent to web properties, this field is optional.'
+      valueType: text
+      defaultValue: null
+      maxLength: 100
+      supportedHitTypes:
+        - all
+    - id: aid
+      name: Application ID
+      requirements: []
+      description: Application identifier.
+      valueType: text
+      defaultValue: null
+      maxLength: 150
+      supportedHitTypes:
+        - all
+    - id: av
+      name: Application Version
+      requirements: []
+      description: Specifies the application version.
+      valueType: text
+      defaultValue: null
+      maxLength: 100
+      supportedHitTypes:
+        - all
+    - id: aiid
+      name: Application Installer ID
+      requirements: []
+      description: Application installer identifier.
+      valueType: text
+      defaultValue: null
+      maxLength: 150
+      supportedHitTypes:
+        - all
+- id: events
+  name: Event Tracking
+  params:
+    - id: ec
+      name: Event Category
+      requirements:
+        - event
+      description: Specifies the event category. Must not be empty.
+      valueType: text
+      defaultValue: null
+      maxLength: 150
+      supportedHitTypes:
+        - event
+    - id: ea
+      name: Event Action
+      requirements:
+        - event
+      description: Specifies the event action.  Must not be empty.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - event
+    - id: el
+      name: Event Label
+      requirements: []
+      description: Specifies the event label.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - event
+    - id: ev
+      name: Event Value
+      requirements: []
+      description: Specifies the event value. Values must be non-negative.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - event
+- id: ecomm
+  name: E-Commerce
+  params:
+    - id: ti
+      name: Transaction ID
+      requirements:
+        - transaction
+        - item
+      description: A unique identifier for the transaction. This value should be the same for both the Transaction hit and Items hits associated to the particular transaction.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - transaction
+        - item
+    - id: ta
+      name: Transaction Affiliation
+      requirements: []
+      description: Specifies the affiliation or store name.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - transaction
+    - id: tr
+      name: Transaction Revenue
+      requirements: []
+      description: Specifies the total revenue associated with the transaction. This value should include any shipping or tax costs.
+      valueType: currency
+      defaultValue: 0
+      maxLength: null
+      supportedHitTypes:
+        - transaction
+    - id: ts
+      name: Transaction Shipping
+      requirements: []
+      description: Specifies the total shipping cost of the transaction.
+      valueType: currency
+      defaultValue: 0
+      maxLength: null
+      supportedHitTypes:
+        - transaction
+    - id: tt
+      name: Transaction Tax
+      requirements: []
+      description: Specifies the total tax of the transaction.
+      valueType: currency
+      defaultValue: 0
+      maxLength: null
+      supportedHitTypes:
+        - transaction
+    - id: in
+      name: Item Name
+      requirements:
+        - item
+      description: Specifies the item name.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - item
+    - id: ip
+      name: Item Price
+      requirements: []
+      description: Specifies the price for a single item / unit.
+      valueType: currency
+      defaultValue: 0
+      maxLength: null
+      supportedHitTypes:
+        - item
+    - id: iq
+      name: Item Quantity
+      requirements: []
+      description: Specifies the number of items purchased.
+      valueType: integer
+      defaultValue: 0
+      maxLength: null
+      supportedHitTypes:
+        - item
+    - id: ic
+      name: Item Code
+      requirements: []
+      description: Specifies the SKU or item code.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - item
+    - id: iv
+      name: Item Category
+      requirements: []
+      description: Specifies the category that the item belongs to.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - item
+    - id: cu
+      name: Currency Code
+      requirements: []
+      description: When present indicates the local currency for all transaction currency values. Value should be a valid ISO 4217 currency code.
+      valueType: text
+      defaultValue: null
+      maxLength: 10
+      supportedHitTypes:
+        - transaction
+        - item
+- id: enhanced-ecomm
+  name: Enhanced E-Commerce
+  params:
+    - id: pr_id
+      name: Product SKU
+      requirements: []
+      description: 'The SKU of the product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: pr_nm
+      name: Product Name
+      requirements: []
+      description: 'The name of the product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: pr_br
+      name: Product Brand
+      requirements: []
+      description: 'The brand associated with the product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: pr_ca
+      name: Product Category
+      requirements: []
+      description: 'The category to which the product belongs. Product index must be a positive integer between 1 and 200, inclusive. The product category parameter can be hierarchical. Use / as a delimiter to specify up to 5-levels of hierarchy. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: pr_va
+      name: Product Variant
+      requirements: []
+      description: 'The variant of the product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: pr_pr
+      name: Product Price
+      requirements: []
+      description: 'The price of a product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: currency
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: pr_qt
+      name: Product Quantity
+      requirements: []
+      description: 'The quantity of a product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: pr_cc
+      name: Product Coupon Code
+      requirements: []
+      description: 'The coupon code associated with a product. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - all
+    - id: pr_ps
+      name: Product Position
+      requirements: []
+      description: "The product's position in a list or collection. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: pr_cd_
+      name: Product Custom Dimension
+      requirements: []
+      description: 'A product-level custom dimension where dimension index is a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: pr_cm_
+      name: Product Custom Metric
+      requirements: []
+      description: 'A product-level custom metric where metric index is a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: pa
+      name: Product Action
+      requirements: []
+      description: 'The role of the products included in a hit. If a product action is not specified, all product definitions included with the hit will be ignored. Must be one of: detail, click, add, remove, checkout, checkout_option, purchase, refund. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: ti
+      name: Transaction ID
+      requirements: []
+      description: "The transaction ID. This is an additional parameter that can be sent when Product Action is set to 'purchase' or 'refund'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: ta
+      name: Affiliation
+      requirements: []
+      description: "The store or affiliation from which this transaction occurred. This is an additional parameter that can be sent when Product Action is set to 'purchase' or 'refund'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: tr
+      name: Revenue
+      requirements: []
+      description: "The total value of the transaction, including tax and shipping. If not sent, this value will be automatically calculated using the product quantity and price fields of all products in the same hit. This is an additional parameter that can be sent when Product Action is set to 'purchase' or 'refund'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: currency
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: tt
+      name: Tax
+      requirements: []
+      description: "The total tax associated with the transaction. This is an additional parameter that can be sent when Product Action is set to 'purchase' or 'refund'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: currency
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: ts
+      name: Shipping
+      requirements: []
+      description: "The shipping cost associated with the transaction. This is an additional parameter that can be sent when Product Action is set to 'purchase' or 'refund'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: currency
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: tcc
+      name: Coupon Code
+      requirements: []
+      description: "The transaction coupon redeemed with the transaction. This is an additional parameter that can be sent when Product Action is set to 'purchase' or 'refund'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: pal
+      name: Product Action List
+      requirements: []
+      description: "The list or collection from which a product action occurred. This is an additional parameter that can be sent when Product Action is set to 'detail' or 'click'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: cos
+      name: Checkout Step
+      requirements: []
+      description: "The step number in a checkout funnel. This is an additional parameter that can be sent when Product Action is set to 'checkout'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: col
+      name: Checkout Step Option
+      requirements: []
+      description: "Additional information about a checkout step. This is an additional parameter that can be sent when Product Action is set to 'checkout'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_nm
+      name: Product Impression List Name
+      requirements: []
+      description: 'The list or collection to which a product belongs. Impression List index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_id
+      name: Product Impression SKU
+      requirements: []
+      description: 'The product ID or SKU. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_nm
+      name: Product Impression Name
+      requirements: []
+      description: 'The name of the product. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_br
+      name: Product Impression Brand
+      requirements: []
+      description: 'The brand associated with the product. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_ca
+      name: Product Impression Category
+      requirements: []
+      description: 'The category to which the product belongs. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_va
+      name: Product Impression Variant
+      requirements: []
+      description: 'The variant of the product. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_ps
+      name: Product Impression Position
+      requirements: []
+      description: "The product's position in a list or collection. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_pr
+      name: Product Impression Price
+      requirements: []
+      description: 'The price of a product. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: currency
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_cd_
+      name: Product Impression Custom Dimension
+      requirements: []
+      description: 'A product-level custom dimension where dimension index is a positive integer between 1 and 200, inclusive. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: il_pi_cm_
+      name: Product Impression Custom Metric
+      requirements: []
+      description: 'A product-level custom metric where metric index is a positive integer between 1 and 200, inclusive. Impression List index must be a positive integer between 1 and 200, inclusive. Product index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: promo_id
+      name: Promotion ID
+      requirements: []
+      description: 'The promotion ID. Promotion index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: promo_nm
+      name: Promotion Name
+      requirements: []
+      description: 'The name of the promotion. Promotion index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: promo_cr
+      name: Promotion Creative
+      requirements: []
+      description: 'The creative associated with the promotion. Promotion index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: promo_ps
+      name: Promotion Position
+      requirements: []
+      description: 'The position of the creative. Promotion index must be a positive integer between 1 and 200, inclusive. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field.'
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+    - id: promoa
+      name: Promotion Action
+      requirements: []
+      description: "Specifies the role of the promotions included in a hit. If a promotion action is not specified, the default promotion action, 'view', is assumed. To measure a user click on a promotion set this to 'promo_click'. For analytics.js the Enhanced Ecommerce plugin must be installed before using this field."
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: social
+  name: Social Interactions
+  params:
+    - id: sn
+      name: Social Network
+      requirements:
+        - social
+      description: 'Specifies the social network, for example Facebook or Google Plus.'
+      valueType: text
+      defaultValue: null
+      maxLength: 50
+      supportedHitTypes:
+        - social
+    - id: sa
+      name: Social Action
+      requirements:
+        - social
+      description: "Specifies the social interaction action. For example on Google Plus when a user clicks the +1 button, the social action is 'plus'."
+      valueType: text
+      defaultValue: null
+      maxLength: 50
+      supportedHitTypes:
+        - social
+    - id: st
+      name: Social Action Target
+      requirements:
+        - social
+      description: Specifies the target of a social interaction. This value is typically a URL but can be any text.
+      valueType: text
+      defaultValue: null
+      maxLength: 2048
+      supportedHitTypes:
+        - social
+- id: timing
+  name: Timing
+  params:
+    - id: utc
+      name: User timing category
+      requirements:
+        - timing
+      description: Specifies the user timing category.
+      valueType: text
+      defaultValue: null
+      maxLength: 150
+      supportedHitTypes:
+        - timing
+    - id: utv
+      name: User timing variable name
+      requirements:
+        - timing
+      description: Specifies the user timing variable.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - timing
+    - id: utt
+      name: User timing time
+      requirements:
+        - timing
+      description: Specifies the user timing value. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: utl
+      name: User timing label
+      requirements: []
+      description: Specifies the user timing label.
+      valueType: text
+      defaultValue: null
+      maxLength: 500
+      supportedHitTypes:
+        - timing
+    - id: plt
+      name: Page Load Time
+      requirements: []
+      description: Specifies the time it took for a page to load. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: dns
+      name: DNS Time
+      requirements: []
+      description: Specifies the time it took to do a DNS lookup.The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: pdt
+      name: Page Download Time
+      requirements: []
+      description: Specifies the time it took for the page to be downloaded. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: rrt
+      name: Redirect Response Time
+      requirements: []
+      description: Specifies the time it took for any redirects to happen. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: tcp
+      name: TCP Connect Time
+      requirements: []
+      description: Specifies the time it took for a TCP connection to be made. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: srt
+      name: Server Response Time
+      requirements: []
+      description: Specifies the time it took for the server to respond after the connect time. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: dit
+      name: DOM Interactive Time
+      requirements: []
+      description: "Specifies the time it took for Document.readyState to be 'interactive'. The value is in milliseconds."
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+    - id: clt
+      name: Content Load Time
+      requirements: []
+      description: Specifies the time it took for the DOMContentLoaded Event to fire. The value is in milliseconds.
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - timing
+- id: exception
+  name: Exceptions
+  params:
+    - id: exd
+      name: Exception Description
+      requirements: []
+      description: Specifies the description of an exception.
+      valueType: text
+      defaultValue: null
+      maxLength: 150
+      supportedHitTypes:
+        - exception
+    - id: exf
+      name: Is Exception Fatal?
+      requirements: []
+      description: Specifies whether the exception was fatal.
+      valueType: boolean
+      defaultValue: true
+      maxLength: null
+      supportedHitTypes:
+        - exception
+- id: customs
+  name: Custom Dimensions / Metrics
+  params:
+    - id: cd_
+      name: Custom Dimension
+      requirements: []
+      description: 'Each custom dimension has an associated index. There is a maximum of 20 custom dimensions (200 for Premium accounts). The dimension index must be a positive integer between 1 and 200, inclusive.'
+      valueType: text
+      defaultValue: null
+      maxLength: 150
+      supportedHitTypes:
+        - all
+    - id: cm_
+      name: Custom Metric
+      requirements: []
+      description: 'Each custom metric has an associated index. There is a maximum of 20 custom metrics (200 for Premium accounts). The metric index must be a positive integer between 1 and 200, inclusive.'
+      valueType: integer
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
+- id: experiments
+  name: Content Experiments
+  params:
+    - id: xid
+      name: Experiment ID
+      requirements: []
+      description: This parameter specifies that this user has been exposed to an experiment with the given ID. It should be sent in conjunction with the Experiment Variant parameter.
+      valueType: text
+      defaultValue: null
+      maxLength: 40
+      supportedHitTypes:
+        - all
+    - id: xvar
+      name: Experiment Variant
+      requirements: []
+      description: This parameter specifies that this user has been exposed to a particular variation of an experiment. It should be sent in conjunction with the Experiment ID parameter.
+      valueType: text
+      defaultValue: null
+      maxLength: null
+      supportedHitTypes:
+        - all
