@@ -16,8 +16,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: tid
       name: Tracking ID / Web Property ID
       requirements: *ref_0
@@ -25,8 +24,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: aip
       name: Anonymize IP
       requirements: []
@@ -34,8 +32,7 @@
       valueType: boolean
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ds
       name: Data Source
       requirements: []
@@ -43,8 +40,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: qt
       name: Queue Time
       requirements: []
@@ -52,8 +48,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: z
       name: Cache Buster
       requirements: []
@@ -61,8 +56,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: user
   name: User
   params:
@@ -73,8 +67,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: uid
       name: User ID
       requirements: []
@@ -82,8 +75,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: session
   name: Session
   params:
@@ -94,8 +86,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: uip
       name: IP Override
       requirements: []
@@ -103,8 +94,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ua
       name: User Agent Override
       requirements: []
@@ -112,8 +102,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: geoid
       name: Geographical Override
       requirements: []
@@ -121,8 +110,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: trafficsources
   name: Traffic Sources
   params:
@@ -133,8 +121,7 @@
       valueType: text
       defaultValue: null
       maxLength: 2048
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cn
       name: Campaign Name
       requirements: []
@@ -142,8 +129,7 @@
       valueType: text
       defaultValue: null
       maxLength: 100
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cs
       name: Campaign Source
       requirements: []
@@ -151,8 +137,7 @@
       valueType: text
       defaultValue: null
       maxLength: 100
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cm
       name: Campaign Medium
       requirements: []
@@ -160,8 +145,7 @@
       valueType: text
       defaultValue: null
       maxLength: 50
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ck
       name: Campaign Keyword
       requirements: []
@@ -169,8 +153,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cc
       name: Campaign Content
       requirements: []
@@ -178,8 +161,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ci
       name: Campaign ID
       requirements: []
@@ -187,8 +169,7 @@
       valueType: text
       defaultValue: null
       maxLength: 100
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: gclid
       name: Google AdWords ID
       requirements: []
@@ -196,8 +177,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: dclid
       name: Google Display Ads ID
       requirements: []
@@ -205,8 +185,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: system
   name: System Info
   params:
@@ -217,8 +196,7 @@
       valueType: text
       defaultValue: null
       maxLength: 20
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: vp
       name: Viewport size
       requirements: []
@@ -226,8 +204,7 @@
       valueType: text
       defaultValue: null
       maxLength: 20
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: de
       name: Document Encoding
       requirements: []
@@ -235,8 +212,7 @@
       valueType: text
       defaultValue: UTF-8
       maxLength: 20
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: sd
       name: Screen Colors
       requirements: []
@@ -244,8 +220,7 @@
       valueType: text
       defaultValue: null
       maxLength: 20
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ul
       name: User Language
       requirements: []
@@ -253,8 +228,7 @@
       valueType: text
       defaultValue: null
       maxLength: 20
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: je
       name: Java Enabled
       requirements: []
@@ -262,8 +236,7 @@
       valueType: boolean
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: fl
       name: Flash Version
       requirements: []
@@ -271,8 +244,7 @@
       valueType: text
       defaultValue: null
       maxLength: 20
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: hit
   name: Hit
   params:
@@ -283,8 +255,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ni
       name: Non-Interaction Hit
       requirements: []
@@ -292,8 +263,7 @@
       valueType: boolean
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: content
   name: Content Information
   params:
@@ -304,8 +274,7 @@
       valueType: text
       defaultValue: null
       maxLength: 2048
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: dh
       name: Document Host Name
       requirements: []
@@ -313,8 +282,7 @@
       valueType: text
       defaultValue: null
       maxLength: 100
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: dp
       name: Document Path
       requirements: []
@@ -322,8 +290,7 @@
       valueType: text
       defaultValue: null
       maxLength: 2048
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: dt
       name: Document Title
       requirements: []
@@ -331,8 +298,7 @@
       valueType: text
       defaultValue: null
       maxLength: 1500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cd
       name: Screen Name
       requirements: *ref_0
@@ -340,8 +306,7 @@
       valueType: text
       defaultValue: null
       maxLength: 2048
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: linkid
       name: Link ID
       requirements: []
@@ -349,8 +314,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: apptracking
   name: App Tracking
   params:
@@ -361,8 +325,7 @@
       valueType: text
       defaultValue: null
       maxLength: 100
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: aid
       name: Application ID
       requirements: []
@@ -370,8 +333,7 @@
       valueType: text
       defaultValue: null
       maxLength: 150
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: av
       name: Application Version
       requirements: []
@@ -379,8 +341,7 @@
       valueType: text
       defaultValue: null
       maxLength: 100
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: aiid
       name: Application Installer ID
       requirements: []
@@ -388,8 +349,7 @@
       valueType: text
       defaultValue: null
       maxLength: 150
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: events
   name: Event Tracking
   params:
@@ -548,8 +508,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_nm
       name: Product Name
       requirements: []
@@ -557,8 +516,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_br
       name: Product Brand
       requirements: []
@@ -566,8 +524,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_ca
       name: Product Category
       requirements: []
@@ -575,8 +532,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_va
       name: Product Variant
       requirements: []
@@ -584,8 +540,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_pr
       name: Product Price
       requirements: []
@@ -593,8 +548,7 @@
       valueType: currency
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_qt
       name: Product Quantity
       requirements: []
@@ -602,8 +556,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_cc
       name: Product Coupon Code
       requirements: []
@@ -611,8 +564,7 @@
       valueType: text
       defaultValue: null
       maxLength: 500
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_ps
       name: Product Position
       requirements: []
@@ -620,8 +572,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_cd_
       name: Product Custom Dimension
       requirements: []
@@ -629,8 +580,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pr_cm_
       name: Product Custom Metric
       requirements: []
@@ -638,8 +588,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pa
       name: Product Action
       requirements: []
@@ -647,8 +596,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ti
       name: Transaction ID
       requirements: []
@@ -656,8 +604,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ta
       name: Affiliation
       requirements: []
@@ -665,8 +612,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: tr
       name: Revenue
       requirements: []
@@ -674,8 +620,7 @@
       valueType: currency
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: tt
       name: Tax
       requirements: []
@@ -683,8 +628,7 @@
       valueType: currency
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: ts
       name: Shipping
       requirements: []
@@ -692,8 +636,7 @@
       valueType: currency
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: tcc
       name: Coupon Code
       requirements: []
@@ -701,8 +644,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: pal
       name: Product Action List
       requirements: []
@@ -710,8 +652,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cos
       name: Checkout Step
       requirements: []
@@ -719,8 +660,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: col
       name: Checkout Step Option
       requirements: []
@@ -728,8 +668,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_nm
       name: Product Impression List Name
       requirements: []
@@ -737,8 +676,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_id
       name: Product Impression SKU
       requirements: []
@@ -746,8 +684,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_nm
       name: Product Impression Name
       requirements: []
@@ -755,8 +692,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_br
       name: Product Impression Brand
       requirements: []
@@ -764,8 +700,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_ca
       name: Product Impression Category
       requirements: []
@@ -773,8 +708,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_va
       name: Product Impression Variant
       requirements: []
@@ -782,8 +716,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_ps
       name: Product Impression Position
       requirements: []
@@ -791,8 +724,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_pr
       name: Product Impression Price
       requirements: []
@@ -800,8 +732,7 @@
       valueType: currency
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_cd_
       name: Product Impression Custom Dimension
       requirements: []
@@ -809,8 +740,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: il_pi_cm_
       name: Product Impression Custom Metric
       requirements: []
@@ -818,8 +748,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: promo_id
       name: Promotion ID
       requirements: []
@@ -827,8 +756,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: promo_nm
       name: Promotion Name
       requirements: []
@@ -836,8 +764,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: promo_cr
       name: Promotion Creative
       requirements: []
@@ -845,8 +772,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: promo_ps
       name: Promotion Position
       requirements: []
@@ -854,8 +780,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: promoa
       name: Promotion Action
       requirements: []
@@ -863,8 +788,7 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: social
   name: Social Interactions
   params:
@@ -1043,8 +967,7 @@
       valueType: text
       defaultValue: null
       maxLength: 150
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: cm_
       name: Custom Metric
       requirements: []
@@ -1052,8 +975,7 @@
       valueType: integer
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
 - id: experiments
   name: Content Experiments
   params:
@@ -1064,8 +986,7 @@
       valueType: text
       defaultValue: null
       maxLength: 40
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0
     - id: xvar
       name: Experiment Variant
       requirements: []
@@ -1073,5 +994,4 @@
       valueType: text
       defaultValue: null
       maxLength: null
-      supportedHitTypes:
-        - all
+      supportedHitTypes: *ref_0

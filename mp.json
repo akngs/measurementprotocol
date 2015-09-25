@@ -21,7 +21,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -42,7 +49,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -54,7 +68,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -66,7 +87,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -78,7 +106,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -90,7 +125,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -117,7 +159,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -129,7 +178,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -147,7 +203,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -159,7 +222,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -171,7 +241,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -183,7 +260,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -201,7 +285,14 @@
         "defaultValue": null,
         "maxLength": 2048,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -213,7 +304,14 @@
         "defaultValue": null,
         "maxLength": 100,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -225,7 +323,14 @@
         "defaultValue": null,
         "maxLength": 100,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -237,7 +342,14 @@
         "defaultValue": null,
         "maxLength": 50,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -249,7 +361,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -261,7 +380,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -273,7 +399,14 @@
         "defaultValue": null,
         "maxLength": 100,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -285,7 +418,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -297,7 +437,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -315,7 +462,14 @@
         "defaultValue": null,
         "maxLength": 20,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -327,7 +481,14 @@
         "defaultValue": null,
         "maxLength": 20,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -339,7 +500,14 @@
         "defaultValue": "UTF-8",
         "maxLength": 20,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -351,7 +519,14 @@
         "defaultValue": null,
         "maxLength": 20,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -363,7 +538,14 @@
         "defaultValue": null,
         "maxLength": 20,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -375,7 +557,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -387,7 +576,14 @@
         "defaultValue": null,
         "maxLength": 20,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -414,7 +610,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -426,7 +629,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -444,7 +654,14 @@
         "defaultValue": null,
         "maxLength": 2048,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -456,7 +673,14 @@
         "defaultValue": null,
         "maxLength": 100,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -468,7 +692,14 @@
         "defaultValue": null,
         "maxLength": 2048,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -480,7 +711,14 @@
         "defaultValue": null,
         "maxLength": 1500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -501,7 +739,14 @@
         "defaultValue": null,
         "maxLength": 2048,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -513,7 +758,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -540,7 +792,14 @@
         "defaultValue": null,
         "maxLength": 100,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -552,7 +811,14 @@
         "defaultValue": null,
         "maxLength": 150,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -564,7 +830,14 @@
         "defaultValue": null,
         "maxLength": 100,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -576,7 +849,14 @@
         "defaultValue": null,
         "maxLength": 150,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -797,7 +1077,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -809,7 +1096,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -821,7 +1115,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -833,7 +1134,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -845,7 +1153,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -857,7 +1172,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -869,7 +1191,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -881,7 +1210,14 @@
         "defaultValue": null,
         "maxLength": 500,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -893,7 +1229,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -905,7 +1248,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -917,7 +1267,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -929,7 +1286,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -941,7 +1305,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -953,7 +1324,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -965,7 +1343,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -977,7 +1362,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -989,7 +1381,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1001,7 +1400,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1013,7 +1419,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1025,7 +1438,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1037,7 +1457,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1049,7 +1476,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1061,7 +1495,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1073,7 +1514,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1085,7 +1533,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1097,7 +1552,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1109,7 +1571,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1121,7 +1590,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1133,7 +1609,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1145,7 +1628,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1157,7 +1647,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1169,7 +1666,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1181,7 +1685,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1193,7 +1704,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1205,7 +1723,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1217,7 +1742,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -1469,7 +2001,14 @@
         "defaultValue": null,
         "maxLength": 150,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1481,7 +2020,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
@@ -1499,7 +2045,14 @@
         "defaultValue": null,
         "maxLength": 40,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       },
       {
@@ -1511,7 +2064,14 @@
         "defaultValue": null,
         "maxLength": null,
         "supportedHitTypes": [
-          "all"
+          "pageview",
+          "screenview",
+          "event",
+          "transaction",
+          "item",
+          "social",
+          "exception",
+          "timing"
         ]
       }
     ]
