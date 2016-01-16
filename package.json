@@ -4,15 +4,18 @@
   "description": "Google Analytics Measurement Protocol",
   "homepage": "https://github.com/akngs/measurementprotocol",
   "repository": "akngs/measurementprotocol",
+  "scripts": {
+    "main": "bin/index.js"
+  },
   "author": {
     "name": "Alan Kang",
     "email": "jania902@gmail.com",
     "url": "http://github.com/akngs"
   },
   "files": [
-    "lib"
+    "bin"
   ],
-  "bin": "lib/index.js",
+  "bin": "bin/index.js",
   "keywords": [],
   "license": "Apache-2.0",
   "dependencies": {
