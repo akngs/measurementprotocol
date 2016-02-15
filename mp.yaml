@@ -301,12 +301,14 @@
       supportedHitTypes: *ref_0
     - id: cd
       name: Screen Name
-      requirements: *ref_0
+      requirements:
+        - screenview
       description: "This parameter is optional on web properties, and required on mobile properties for screenview hits, where it is used for the 'Screen Name' of the screenview hit. On web properties this will default to the unique URL of the page by either using the &dl parameter as-is or assembling it from &dh and &dp."
       valueType: text
       defaultValue: null
       maxLength: 2048
-      supportedHitTypes: *ref_0
+      supportedHitTypes:
+        - screenview
     - id: linkid
       name: Link ID
       requirements: []
